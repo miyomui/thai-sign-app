@@ -1,0 +1,39 @@
+/*
+ * Design tokens — ไฟล์กลาง (แก้แล้วกระทบทุกหน้า ต้องแจ้งทีมก่อน)
+ * ที่มา: Moodboard "ดอกบัว" ใน docs/design/
+ *
+ * Tailwind v4 สร้างคลาสจาก @theme ให้อัตโนมัติ เช่น
+ *   --color-primary        → bg-primary, text-primary, border-primary
+ *   --font-display         → font-display
+ *   --shadow-card          → shadow-card
+ *   --radius-card          → rounded-card
+ */
+@theme {
+  /* ---- สี ---- */
+  --color-primary: #8a9a6e;        /* เขียวเสจ: แถบ progress, chip ที่เลือก */
+  --color-primary-strong: #5e6e47; /* เขียวเข้ม: ปุ่มหลัก ตัวอักษรขาว (ผ่าน contrast) */
+  --color-secondary: #b5c49a;      /* เขียวอ่อน: เมนูปกติ, ปุ่มรอง */
+  --color-accent: #e88fb8;         /* ชมพูดอกบัว: ไฮไลต์, progress, หัวใจ */
+  --color-surface: #f5d9e6;        /* ชมพูจาง: chip หมวด, การ์ดเสริม */
+  --color-bg: #fbf6ec;             /* ครีม: พื้นหลังหน้า */
+  --color-gold: #d4af37;           /* ทอง: ดาว / เรียนจบ */
+  --color-ink: #2f3a26;            /* ตัวอักษรหลัก */
+  --color-ink-muted: #5b6650;      /* ตัวอักษรรอง */
+  --color-card: #ffffff;           /* พื้นการ์ดหลัก */
+  --color-line: #e3dccb;           /* เส้นขอบบาง */
+
+  /* ---- ฟอนต์ ---- */
+  --font-sans: 'Sarabun', sans-serif;          /* เนื้อหา (ค่าเริ่มต้น) */
+  --font-display: 'Prompt', sans-serif;        /* หัวข้อ, ปุ่ม, เมนู */
+  --font-mono: 'IBM Plex Mono', monospace;     /* รหัสคำ, gloss, ป้ายเล็ก */
+
+  /* ---- มุมโค้ง ---- */
+  --radius-btn: 12px;
+  --radius-card: 16px;
+  --radius-panel: 18px;
+  --radius-xl-card: 22px;
+
+  /* ---- เงา ---- */
+  --shadow-card: 0 2px 8px rgba(47, 58, 38, 0.08);
+  --shadow-hover: 0 6px 16px rgba(47, 58, 38, 0.12);
+}

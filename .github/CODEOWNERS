@@ -1,0 +1,33 @@
+# ใครต้อง review เมื่อมีการแก้ไฟล์ในโฟลเดอร์ไหน
+# แทนที่ @OWNER_xxx ด้วย GitHub username จริง (ให้ตรงกับ docs/OWNERSHIP.md)
+# บรรทัดล่างสุดที่ตรงกับไฟล์ "ชนะ" — ใส่กติกาเฉพาะไว้ล่าง กติกากว้างไว้บน
+
+# ---- ไฟล์กลาง ----
+/CLAUDE.md                         @OWNER_shared
+/docs/                             @OWNER_shared
+/.github/                          @OWNER_shared
+/frontend/package.json             @OWNER_shared
+/frontend/src/app/                 @OWNER_shell
+/frontend/src/components/ui/       @OWNER_ui
+/frontend/src/styles/              @OWNER_ui
+/frontend/src/lib/                 @OWNER_shared
+/supabase/                         @OWNER_db
+
+# ---- Features ----
+/frontend/src/features/home/       @OWNER_home
+/frontend/src/features/vocab/      @OWNER_vocab
+/frontend/src/features/lessons/    @OWNER_lessons
+/frontend/src/features/practice/   @OWNER_practice
+/frontend/src/features/ar/         @OWNER_ar
+/frontend/src/features/auth/       @OWNER_auth
+/frontend/src/features/settings/   @OWNER_shell
+/frontend/src/features/avatar/     @OWNER_avatar
+/frontend/src/features/sign-ai/    @OWNER_ai
+/frontend/src/features/quiz/       @OWNER_practice
+/frontend/src/features/progress/   @OWNER_db
+
+# ---- ส่วนอื่น ----
+/frontend/public/avatar/           @OWNER_avatar
+/frontend/public/models/           @OWNER_ai
+/ml/                               @OWNER_ai
+/backend/                          @OWNER_ai
