@@ -1,0 +1,50 @@
+/* ไฟล์กลาง — style พื้นฐานทั้งเว็บ */
+@import 'tailwindcss';
+@import './tokens.css';
+
+@layer base {
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  a {
+    color: var(--color-primary-strong);
+  }
+  a:hover {
+    color: var(--color-ink);
+  }
+  button {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: default;
+  }
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  input::placeholder {
+    color: var(--color-ink-muted);
+  }
+}
+
+/* ลายทางสำหรับกล่อง placeholder (ภาพ/อวตารที่ยังไม่มีของจริง) */
+@utility stripes-pink {
+  background: repeating-linear-gradient(
+    135deg,
+    rgb(245 217 230 / 0.9) 0 12px,
+    rgb(245 217 230 / 0.45) 12px 24px
+  );
+}
+@utility stripes-green {
+  background: repeating-linear-gradient(
+    135deg,
+    rgb(181 196 154 / 0.5) 0 12px,
+    rgb(181 196 154 / 0.25) 12px 24px
+  );
+}
